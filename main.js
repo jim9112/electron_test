@@ -18,15 +18,16 @@ function createWindow(){
 // open devtools
 win.webContents.openDevTools();
 
-
+// resets window on close
 win.on('closed', () => {
     min = null;
 });
 }
 
+// launches window when app is loaded
 app.on('ready', createWindow);
 
-// quite when all windows closed
+// quit when all windows closed
 app.on('window-all-closed', () => {
     if(process.platform !== 'darwin'){
         app.quit();
