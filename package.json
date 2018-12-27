@@ -1,0 +1,14 @@
+{
+  "name": "testpackage",
+  "version": "1.0.0",
+  "description": "my test",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Jimmy",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^4.0.0"
+  }
+}
